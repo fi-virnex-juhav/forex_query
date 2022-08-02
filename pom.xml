@@ -9,42 +9,27 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.virnex.juhav</groupId>
-	<artifactId>CurrencyExchangeQuery</artifactId>
+	<artifactId>forex_query</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>CurrencyExchangeQuery</name>
-	<description>Currency Exchange Query Demo project by juha valimaki, new guy at Virnex.fi</description>
+	<name>forex_query</name>
+	<description>Forex (amount,from,to) Query Demo project by juha valimaki, new guy at Virnex.fi</description>
 	<properties>
 		<java.version>17</java.version>
 	</properties>
 	<dependencies>
-	<!-- copy based on hp error begin
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-data-jpa</artifactId>
-		</dependency>
-	 copy based on hp error end --> 
+<!--		
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
 			<scope>runtime</scope>
 		</dependency>
-		<dependency>
-			<groupId>org.quartz-scheduler</groupId>
-			<artifactId>quartz</artifactId>
-			<version>2.2.1</version>
-		</dependency>
-		<dependency>
-			<groupId>org.quartz-scheduler</groupId>
-			<artifactId>quartz-jobs</artifactId>
-			<version>2.2.1</version>
-		</dependency>
+
 		<dependency>
 			<groupId> log4j </groupId>
 			<artifactId> log4j </artifactId>
 			<version>1.2.16</version>
 		</dependency>
-		
-	<!-- copy based on hp end -->
+-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-rest</artifactId>
@@ -88,6 +73,8 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
+		<!-- change the name of jar file --> 
+		<finalName>forex_query</finalName>
 	</build>
 
 </project>

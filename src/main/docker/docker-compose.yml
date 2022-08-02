@@ -1,0 +1,21 @@
+version: "3"
+# run from terminal like:
+# apikey=xxx docker-compose up
+# replace xxx with your valid apikey
+# or
+# replace xxx with DUMMY to use just run the java code without query to external Forex API.
+# apikey=DUMMY enables running the application without loading the external apilayer.com web site.
+# restart: [always, unless-stopped, on-failure, "no"]
+# restart: "no" with quotes because in yaml no is interpreted as false!
+services:
+    forex_query:
+      image: 'forex_query:latest'
+      build: .
+      container_name: forex_query
+      
+      environment:
+        apikey: ${apikey}
+      
+      ports:
+        - 8080:8080
+      restart: "no"
